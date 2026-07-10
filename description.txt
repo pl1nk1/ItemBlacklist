@@ -1,0 +1,1 @@
+Blocks specific weapons/accessories (or entire mods) from being used or equipped - a configurable house-rule enforcer for self-imposed playthrough restrictions.

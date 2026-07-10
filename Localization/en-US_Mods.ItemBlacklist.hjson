@@ -1,0 +1,103 @@
+Configs: {
+	BlacklistConfig: {
+		DisplayName: Item Blacklist
+
+		BlacklistedMods: {
+			Label: Blacklisted mods
+			Tooltip:
+				'''
+				Each entry blocks a whole mod's items, with its own category toggles
+				Use the mod's internal name, not its display name (e.g. CalamityOverhaul, not "Calamity Overhaul")
+				'''
+		}
+
+		BlacklistedItems: {
+			Label: Blacklisted items
+			Tooltip:
+				'''
+				Individual items to cover, formatted as ModName/ItemClassName - uses the toggles below
+				Find the class name in the item's source, or ask the mod author - display names won't work
+				Hover an item in-game and press the Toggle Item Blacklist key to add/remove it here automatically
+				'''
+		}
+
+		BlockWeapons: {
+			Label: Block weapons
+			Tooltip: Blacklisted weapons can't be swung, shot, or cast
+		}
+
+		BlockAccessories: {
+			Label: Block accessories
+			Tooltip: Blacklisted accessories can't be equipped
+		}
+
+		BlockTools: {
+			Label: Block tools
+			Tooltip: Blacklisted pickaxes/axes/hammers can't be used to mine, chop, or smash
+		}
+
+		BlockPlaceables: {
+			Label: Block placeables
+			Tooltip: Blacklisted blocks, walls, and furniture can't be placed
+		}
+
+		BlockOther: {
+			Label: Block other items
+			Tooltip: Blacklisted items that aren't a weapon, tool, accessory, or placeable (potions, etc.) can't be used
+		}
+
+		WeaponDamagePercent: {
+			Label: Weapon damage %
+			Tooltip:
+				'''
+				Independent of Block weapons - nerfs damage instead of/as well as blocking use
+				100 = no change, 50 = half damage. Moot if Block weapons is also on.
+				'''
+		}
+	}
+
+	ModBlacklistEntry: {
+		ModName: {
+			Label: Mod internal name
+			Tooltip: The mod's internal name, not its display name (e.g. CalamityOverhaul, not "Calamity Overhaul")
+		}
+
+		BlockWeapons: {
+			Label: Block weapons
+			Tooltip: This mod's weapons can't be swung, shot, or cast
+		}
+
+		BlockAccessories: {
+			Label: Block accessories
+			Tooltip: This mod's accessories can't be equipped
+		}
+
+		BlockTools: {
+			Label: Block tools
+			Tooltip: This mod's pickaxes/axes/hammers can't be used to mine, chop, or smash
+		}
+
+		BlockPlaceables: {
+			Label: Block placeables
+			Tooltip: This mod's blocks, walls, and furniture can't be placed
+		}
+
+		BlockOther: {
+			Label: Block other items
+			Tooltip: This mod's items that aren't a weapon, tool, accessory, or placeable (potions, etc.) can't be used
+		}
+
+		WeaponDamagePercent: {
+			Label: Weapon damage %
+			Tooltip:
+				'''
+				Independent of Block weapons - nerfs this mod's weapon damage instead of/as well as blocking use
+				100 = no change, 50 = half damage. Moot if Block weapons is also on.
+				'''
+		}
+
+		Tooltip: ""
+	}
+}
+
+"Keybinds.Toggle Item Blacklist.DisplayName": Toggle  Item  Blacklist
