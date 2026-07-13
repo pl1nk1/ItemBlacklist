@@ -15,43 +15,10 @@ Configs: {
 			Label: Blacklisted items
 			Tooltip:
 				'''
-				Individual items to cover, formatted as ModName/ItemClassName - uses the toggles below
+				Individual items to cover, each with its own category toggles
 				Find the class name in the item's source, or ask the mod author - display names won't work
-				Hover an item in-game and press the Toggle Item Blacklist key to add/remove it here automatically
-				'''
-		}
-
-		BlockWeapons: {
-			Label: Block weapons
-			Tooltip: Blacklisted weapons can't be swung, shot, or cast
-		}
-
-		BlockAccessories: {
-			Label: Block accessories
-			Tooltip: Blacklisted accessories can't be equipped
-		}
-
-		BlockTools: {
-			Label: Block tools
-			Tooltip: Blacklisted pickaxes/axes/hammers can't be used to mine, chop, or smash
-		}
-
-		BlockPlaceables: {
-			Label: Block placeables
-			Tooltip: Blacklisted blocks, walls, and furniture can't be placed
-		}
-
-		BlockOther: {
-			Label: Block other items
-			Tooltip: Blacklisted items that aren't a weapon, tool, accessory, or placeable (potions, etc.) can't be used
-		}
-
-		WeaponDamagePercent: {
-			Label: Weapon damage %
-			Tooltip:
-				'''
-				Independent of Block weapons - nerfs damage instead of/as well as blocking use
-				100 = no change, 50 = half damage. Moot if Block weapons is also on.
+				Hover an item in-game and press the Toggle Item Blacklist key to add/remove it here automatically (with default toggles - adjust them here afterward)
+				If the item's mod is ALSO in Blacklisted mods, this entry overrides that mod entry for this item only
 				'''
 		}
 	}
@@ -93,6 +60,74 @@ Configs: {
 				'''
 				Independent of Block weapons - nerfs this mod's weapon damage instead of/as well as blocking use
 				100 = no change, 50 = half damage. Moot if Block weapons is also on.
+				'''
+		}
+
+		PostFireNerf: {
+			Label: Nerf after hit lands
+			Tooltip:
+				'''
+				Turn on only if Weapon damage % isn't working - some weapons bypass the normal nerf with their own custom code
+				Applies the damage cut after the hit lands instead, which can't be bypassed the same way
+				The weapon's tooltip damage number won't reflect the nerf when this is on, only the text line will
+				'''
+		}
+
+		Tooltip: ""
+	}
+
+	ItemBlacklistEntry: {
+		ModName: {
+			Label: Mod internal name
+			Tooltip: The mod's internal name, not its display name (e.g. CalamityOverhaul, not "Calamity Overhaul")
+		}
+
+		ItemName: {
+			Label: Item class name
+			Tooltip: The item's class name in its mod's source (e.g. SHPCItem) - not its display name
+		}
+
+		BlockWeapons: {
+			Label: Block weapons
+			Tooltip: This item can't be swung, shot, or cast (if it's a weapon)
+		}
+
+		BlockAccessories: {
+			Label: Block accessories
+			Tooltip: This item can't be equipped (if it's an accessory)
+		}
+
+		BlockTools: {
+			Label: Block tools
+			Tooltip: This item can't be used to mine, chop, or smash (if it's a pickaxe/axe/hammer)
+		}
+
+		BlockPlaceables: {
+			Label: Block placeables
+			Tooltip: This item can't be placed (if it's a block, wall, or furniture)
+		}
+
+		BlockOther: {
+			Label: Block other
+			Tooltip: This item can't be used at all, if it isn't a weapon, tool, accessory, or placeable (potions, etc.)
+		}
+
+		WeaponDamagePercent: {
+			Label: Weapon damage %
+			Tooltip:
+				'''
+				Independent of Block weapons - nerfs this item's damage instead of/as well as blocking use
+				100 = no change, 50 = half damage. Moot if Block weapons is also on.
+				'''
+		}
+
+		PostFireNerf: {
+			Label: Nerf after hit lands
+			Tooltip:
+				'''
+				Turn on only if Weapon damage % isn't working - some weapons bypass the normal nerf with their own custom code
+				Applies the damage cut after the hit lands instead, which can't be bypassed the same way
+				The weapon's tooltip damage number won't reflect the nerf when this is on, only the text line will
 				'''
 		}
 

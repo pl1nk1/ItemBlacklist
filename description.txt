@@ -1,1 +1,7 @@
-Blocks specific weapons/accessories (or entire mods) from being used or equipped - a configurable house-rule enforcer for self-imposed playthrough restrictions.
+A configurable house-rule enforcer for self-imposed (or group) playthrough restrictions - block or nerf specific items, or entire mods, instead of relying on willpower.
+
+Blacklist a whole mod, or individual items by name, each with their own toggles for weapons, tools, accessories, and placeables. Blocked items can't be used or equipped at all; alternatively, nerf a weapon's damage by a percentage instead of (or alongside) blocking it, so it stays usable but weaker. A few weapons (some "overhaul"-style mods add their own custom firing/damage code) route around the normal damage hook - a per-entry fallback applies the nerf after the hit lands instead, for those specific cases.
+
+Hover an item in-game and press the Toggle Item Blacklist key to add or remove it on the fly, no menu required.
+
+The blacklist is synced from the server, so everyone in a game sees and is bound by the same rules - only the host (or, on a dedicated server, whoever edits the config file directly) can change it.
